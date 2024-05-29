@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+.Buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 25px;
+  gap: 10px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
