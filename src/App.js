@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Navbar from "./components/Navbar"
+import SimpleNavbar from "./components/SimpleNavbar"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Navbar></Navbar>
+        <SimpleNavbar></SimpleNavbar>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
