@@ -1,0 +1,23 @@
+plugins:
+  datasette-dashboards:
+    my-dashboard:
+      title: My Dashboard
+      description: Showing some nice metrics
+      layout:
+        - [analysis-note, events-count]
+      charts:
+        analysis-note:
+          library: markdown
+          display: |-
+            # Analysis notes
+            > A quick rundown of events poop and KPIs
+
+        events-count:
+          title: Total number of events
+          db: test
+          query: SELECT sum(amount) as count FROM transactions where amount < 0
+          library: metric
+          display:
+            field: count
+            prefix:
+            suffix:
